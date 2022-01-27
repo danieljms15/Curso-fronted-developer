@@ -1,0 +1,20 @@
+.headeer-container {
+    background-color: aqua;
+    color: darkblue;
+}
+.main-container {
+    background-color: burlywood;
+    height: 900px;
+    display: flex;
+    align-items: center;
+}
+.footer-continer {
+    background-color: aqua;
+}
+.container-principal {
+    background-color: cadetblue;
+    height: 100px;
+    width: 300px;
+    border-radius: 15px; 
+
+}

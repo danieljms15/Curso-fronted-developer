@@ -1,0 +1,110 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+}
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.header__menu {
+    margin-right: 30px;
+}
+.header__menu ul {
+     display: none;  
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -14px;
+}
+.header__menu:hover ul, ul:hover {
+    display: block;
+}
+.header__menu li {
+    margin: 10px 0px;
+}
+.header__menu li a {
+    color: white;
+    text-decoration: none;
+}
+.header__menu li a:hover  {
+    text-decoration: underline;
+}
+.header__menu--profile {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+.header__menu--profile img {
+    margin-right: 8px;
+    width: 40px;
+}
+.header__menu--profile p {
+    margin: 0px ;
+    color: white;
+}
+.main {
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 0 0 2rem;
+    height: 380px;
+}
+.main__container {
+    justify-content: center;
+    display: flex;    
+    position: relative;
+    padding-right: 2rem;
+    overflow: visible;
+}
+.main__container-error {
+    max-width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: hsl(0deg 0% 100%);
+}
+.main__container-error h1 {
+    position: relative;
+    align-self: center;
+    line-height: 4.5rem;
+    font-size: 100px;
+	animation: latidos .9s infinite;
+	transform-origin: center;
+}
+.main__container-error h1 span {
+    display: inline-block;
+	font-size: 150px;
+	text-shadow: 0 0 10px #222,1px 1px  0
+}
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
+}
+.footer__register {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.footer__register a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer__register a:hover {
+    text-decoration: underline;
+}
